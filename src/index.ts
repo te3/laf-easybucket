@@ -18,6 +18,7 @@ export class EasyBucket {
     * Creates a new instance of the EasyBucket class with the specified Laf bucket name.
     * @constructor
     * @param {string} bucket - Laf 存储桶的名称。The name of the Laf bucket.
+    * @param {string} env - Laf 环境变量，默认可不填。The Environment of the Laf bucket.
     */
   constructor(bucket: string, env: Environment = require("@lafjs/cloud").default.env) {
     this.bucket = bucket;

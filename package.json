@@ -1,0 +1,27 @@
+{
+  "name": "laf-easybucket",
+  "version": "1.1.5",
+  "author": "jeff wang <30496329@qq.com>",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/te3/laf-easybucket"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint \"./**/*.ts\"",
+    "fix": "eslint --fix \"./**/*.ts\"",
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "mime-types": "^2.1.35"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-s3": "^3.300.0",
+    "@aws-sdk/s3-request-presigner": "^3.304.0",
+    "@lafjs/cloud": "^1.0.0-beta.4",
+    "typescript": "^5.0.2"
+  }
+}

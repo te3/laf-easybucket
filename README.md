@@ -1,7 +1,7 @@
 # only for [laf](https://laf.dev/).
 
 ## install
-![image](https://github.com/te3/easybucket/blob/main/snapshot.jpg)
+![image](https://github.com/te3/laf-easybucket/blob/main/snapshot.jpg)
 
 
 ## import and initialize

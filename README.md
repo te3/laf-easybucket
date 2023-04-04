@@ -19,6 +19,19 @@ const easyBucket = new EasyBucket("your-buck-name");
 const url = await easyBucket.save('index.html', 'Hello World'); 
 //https://your-buck-name.oss.laf.dev/index.html
 ```
+> save upload file
+```javascript
+const {
+  mimetype,
+  filename,
+  path
+} = ctx.files[0];
+
+const fileBuffer = await require('node:fs').promises.readFile(path);
+
+const easybucket = new EasyBucket("your-bucket-name");
+const url = await easybucket.save(filename, fileBuffer, mimetype);
+```
 
 **download**(url: string, directory?: string): Promise\<string>
 > directly save the source of the url to bucket with random filename.
